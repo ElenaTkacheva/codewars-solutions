@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/5631213916d70a0979000066/solutions/javascript
+
+function pattern(n){
+  let arr=[];
+  for(let i=1;i<=n;i++){
+  arr.push('1'+'*'.repeat(i-1)+i);
+  }
+ return arr.join('\n').replace('1','');
+}
