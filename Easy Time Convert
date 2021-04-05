@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/5a084a098ba9146690000969/solutions/javascript
+
+function timeConvert(num) { 
+  if (num < 0) return '00:00';
+  let h = ('' + Math.floor(num / 60)).padStart(2, '0');
+  let m = ('' + num % 60).padStart(2, '0')
+  return `${h}:${m}`
+}
