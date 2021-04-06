@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/568dc69683322417eb00002c/solutions/javascript
+
+function tripleX(str){
+  return str.indexOf('xxx') > -1 && str.indexOf('x') === str.indexOf('xxx');
+}
