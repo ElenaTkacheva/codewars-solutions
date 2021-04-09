@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/5808ff71c7cfa1c6aa00006d/solutions/javascript
+
+function letterCount(s){
+  let obj={};
+  for (let el of s){
+    if (obj[el]){
+      obj[el]++;
+    } else{
+      obj[el]=1;
+    }
+  }
+  return obj;
+}
