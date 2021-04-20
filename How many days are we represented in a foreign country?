@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/58e93b4706db4d24ee000096/solutions/javascript
+
+function daysRepresented(trips){
+  let arr =trips.map(v=>{
+    let arr =[];
+    for (let i=v[0];i<=v[1];i++){
+      arr.push(i);
+    }
+    return arr;
+  }) 
+  return [...new Set([].concat(...arr))].length;
+}
