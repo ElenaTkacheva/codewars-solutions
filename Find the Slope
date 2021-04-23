@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/55a75e2d0803fea18f00009d
+
+const slope = ([x1, y1, x2, y2]) => {
+  const result = (y2 - y1) / (x2 - x1)
+  return isFinite(result) ? `${result}` : 'undefined'
+}
+
+
+// or
+function slope(arr){
+  let result = (arr[3] - arr[1]) / (arr[2] - arr[0])
+  if ((arr[2] - arr[0])===0) return  'undefined';
+   return result.toString();
+  
+}
