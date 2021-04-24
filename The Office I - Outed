@@ -1,0 +1,25 @@
+https://www.codewars.com/kata/57ecf6efc7fe13eb070000e1
+
+function outed(meet, boss){
+  let sum=0;
+  let count=0;
+  for (let x in meet)
+    if (x!=boss)
+    {
+      sum+=meet[x];
+      count++;
+    }  
+    else
+    {
+      sum+=meet[x]*2;
+      count++;
+    }
+  return sum/count<=5?'Get Out Now!':'Nice Work Champ!';
+}
+
+//or
+
+function outed(meet, boss){
+  return (Object.values(meet).reduce((a,b)=>(a+b),0)+(meet[boss]))
+  /(Object.values(meet).length)>5?'Nice Work Champ!':'Get Out Now!';
+}
