@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/5828713ed04efde70e000346
+
+function countLanguages(list) {
+  let obj={};
+  list.map(v=>obj[v.language]=(obj[v.language]||0)+1)
+  return obj;
+}
