@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/53b2ff49b82af296ce001139/solutions/javascript
+
+Array.prototype.reverse = function() {
+  let arr = this.splice(0);  
+  while(arr.length) {
+    this.push(arr.pop());
+  }   
+  return this;
+};
