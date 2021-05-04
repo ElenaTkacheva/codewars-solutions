@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/5b4e474305f04bea11000148
+
+function digits(num){
+  let numN=num.toString().split('').map(v=>v*1)
+  let arr=[];
+  for (let i=0;i<numN.length;i++){
+    for (let j=1+i;j<numN.length;j++){
+       arr.push(numN[i]+numN[j]);
+    }
+  }
+     return arr;
+}
