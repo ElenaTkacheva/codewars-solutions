@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/5b39e91ee7a2c103300018b3
+
+const removeConsecutiveDuplicates = s => {
+  let arr = [];
+  s = s.split(' ');
+  for (let i = 1; i <= s.length; i++){
+    if (s[i] !== s[i-1]){
+      arr.push(s[i-1]);
+    }
+  }
+  return arr.join(' ');
+}
