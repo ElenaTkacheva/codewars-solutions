@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/5dd5128f16eced000e4c42ba
+
+function solve(st) {
+   let maxDiff = 0, result = 'z';
+  for (let el of st) {
+    let diff = st.lastIndexOf(el) - st.indexOf(el);
+      if (maxDiff < diff || maxDiff == diff && el <= result) {
+        result = el;
+        maxDiff = diff;
+      }
+    }
+  return result;
+}
