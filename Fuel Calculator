@@ -1,0 +1,25 @@
+https://www.codewars.com/kata/57b58827d2a31c57720012e8
+
+function fuelPrice(litres, pricePerLitres) {
+  let sale;
+  if (litres<2) sale=0;
+  else if (litres<4) sale=0.05;
+  else if (litres<6) sale=0.10;
+  else if (litres<8) sale=0.15;
+  else if (litres<10) sale=0.20;
+  else sale=0.25;
+  return +(litres*(pricePerLitres-sale)).toFixed(2);
+}
+
+//or
+
+function fuelPrice(litres, pricePerLitre) {
+ let discountCents = 0
+  if (litres >= 2) discountCents = 0.05
+  if (litres >= 4) discountCents = 0.1
+  if (litres >= 6) discountCents = 0.15
+  if (litres >= 8) discountCents = 0.2
+  if (litres >= 10) discountCents = 0.25
+  const totalPrice = litres * pricePerLitre - litres * discountCents
+  return Number(totalPrice.toFixed(2))
+  }
