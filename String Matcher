@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/565ce4ab24ef4aee6a000074
+
+function isMatching(string, str1, str2) {
+  return (string.split('').sort((a,b)=>a.localeCompare(b)).join``).toLowerCase().trim()===
+  ((str1+str2).split('').sort((a,b)=>a.localeCompare(b)).join``).toLowerCase().trim()
+}
