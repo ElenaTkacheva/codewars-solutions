@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/5b358a1e228d316283001892
+
+function getStrings(city){
+  const cArr = city.toLowerCase().replace(/\s/g, '').split('');
+  return [...new Set(cArr)].map(letter => {
+    const count = cArr.filter(cletter => cletter === letter).length;
+    return `${letter}:${'*'.repeat(count)}`
+  }).join(',')
+}
