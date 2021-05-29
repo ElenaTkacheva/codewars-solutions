@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/5727bb0fe81185ae62000ae3/train/javascript
+
+function cleanString(s) {
+  let res = [];
+  for (let x of s) {
+    if (x === '#') {
+      res.pop();
+    } else {
+      res.push(x);
+    }
+  }
+  return res.join('');
+};
