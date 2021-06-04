@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/5ce9c1000bab0b001134f5af
+
+const quarterOf = (m) => {
+  if (m<=3) return 1;
+  if (m<=6) return 2;
+  if (m<=9) return 3;
+  return 4;
+}
