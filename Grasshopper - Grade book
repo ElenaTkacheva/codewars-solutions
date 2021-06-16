@@ -1,0 +1,26 @@
+https://www.codewars.com/kata/55cbd4ba903825f7970000f5
+
+function getGrade (s1, s2, s3) {
+ let q=(s1+s2+s3)/3
+  if (q>=90)return  'A'
+  if (q>=80)return  'B'
+  if (q>=70)return  'C'
+  if (q>=60)return  'D'
+  if (q>=0)return   'F'
+   // Code here
+}
+
+//or
+
+function getGrade (s1, s2, s3) {
+  let s=(s1+s2+s3)/3;
+  if (s>=90) {
+    return 'A';
+    } else if (80 <= s ) {
+      return 'B';
+      } else if (70 <= s ) {
+        return 'C';
+        } else if (60 <= s ) {
+          return 'D';
+  } else return 'F'
+}
